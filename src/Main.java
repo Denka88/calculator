@@ -12,15 +12,19 @@ public class Main {
         while (key) {
 
             int a = scanner.nextInt();
+            int b;
             char c = scanner.next().charAt(0);
 
             switch (c) {
 
                 case '+':
-                    int b = scanner.nextInt();
+                    b = scanner.nextInt();
                     System.out.println("Результат: " + sum(a, b));
                     break;
-
+                case '-':
+                    b = scanner.nextInt();
+                    System.out.println("Результат: " + sub(a, b));
+                    break;
             }
 
             System.out.print("Закончить?(y/не y - чтобы продолжить): ");
@@ -32,6 +36,9 @@ public class Main {
     }
     public static int sum(int a, int b){
         return a + b;
+    }
+    public static int sub(int a, int b){
+        return a - b;
     }
 
 }

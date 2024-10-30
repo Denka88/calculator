@@ -25,6 +25,10 @@ public class Main {
                     b = scanner.nextInt();
                     System.out.println("Результат: " + sub(a, b));
                     break;
+                case '/':
+                    b = scanner.nextInt();
+                    System.out.println("Результат: " + div(a, b));
+                    break;
             }
 
             System.out.print("Закончить?(y/не y - чтобы продолжить): ");
@@ -39,6 +43,9 @@ public class Main {
     }
     public static int sub(int a, int b){
         return a - b;
+    }
+    public static double div(int a, int b){
+        return (double) a / b;
     }
 
 }

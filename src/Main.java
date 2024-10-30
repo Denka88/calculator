@@ -14,7 +14,12 @@ public class Main {
             char c = scanner.next().charAt(0);
 
             switch (c) {
-                
+
+                case '+':
+                    int b = scanner.nextInt();
+                    System.out.println("Результат: " + sum(a, b));
+                    break;
+
             }
 
             System.out.print("Закончить?(y/не y - чтобы продолжить): ");
@@ -22,8 +27,10 @@ public class Main {
             if(stop == 'y'){
                 key = false;
             }
-
+            
         }
-        
-    }
+
+    public static int sum(int a, int b){
+        return a + b;
+
 }

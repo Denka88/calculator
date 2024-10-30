@@ -29,6 +29,10 @@ public class Main {
                     b = scanner.nextInt();
                     System.out.println("Результат: " + div(a, b));
                     break;
+                case '*':
+                    b = scanner.nextInt();
+                    System.out.println("Результат: " + mul(a, b));
+                    break;
             }
 
             System.out.print("Закончить?(y/не y - чтобы продолжить): ");
@@ -46,6 +50,9 @@ public class Main {
     }
     public static double div(int a, int b){
         return (double) a / b;
+    }
+    public static int mul(int a, int b){
+        return a * b;
     }
 
 }
